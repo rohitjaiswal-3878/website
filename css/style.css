@@ -1,0 +1,211 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding:0;
+
+}
+/* css variables */
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+/* naigationbar:logo and image  */
+#logo{
+    margin:1px 10px;
+
+}
+#logoimg{
+    height:70px;
+    margin:1px 10px;
+    
+}
+
+#navbar ul{
+    display:flex;
+    
+}
+#navbar::before{
+    content:"";
+    background-color:gray;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+    font-family: 'Hanalei Fill', cursive;
+}
+#navbar ul li a{
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:crimson;
+    background-color: chartreuse;
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:200px 300px;
+    height:141px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Hanalei Fill', cursive;
+}
+
+#home::before{
+    content:"";
+    background:url("../bg1.webp") no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height:642px;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+.h-new{
+    font-size: 6rem;
+    padding:20px;
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Hanalei Fill', cursive;
+    
+}
+#home p{
+    color : white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#newbutton {
+    padding: 10px 40px;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 2rem;
+    margin: 20px;
+    border-radius: 20px;
+    border: 8px dotted blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 3rem;
+    padding:10px;
+    font-family: 'Hanalei Fill', cursive;
+}
+/* services section  */
+#services{
+    display:flex;
+    padding :20px;
+    font-family: 'Hanalei Fill', cursive;
+}
+#services .box {
+    border: 9px solid brown;
+    padding: 38px;
+    margin: 16px 17px;
+    border-radius: 40px;
+    background-color: bisque;
+}
+#services .box img{
+    height:160px;
+    display:block;
+    margin:auto;
+}
+#services .box p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+/* clients section  */
+#clients-section{
+    height:355px;
+    position: relative;
+}
+#clients-section::before{
+    content: "";
+    position:absolute;
+    background: url("../clients.jpg") no-repeat center center/cover;
+    height: 127%;
+    width:100%;
+    z-index: -1;
+    opacity:0.4;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients img{
+    height:200px;
+}
+.clients-items{
+    padding : 15px 80px;
+}
+/* contactus  */
+#contact-section{
+    padding:96px 0px; 
+    position:relative;
+    
+}
+#contact-section::before{
+    content:"";
+    position:absolute;
+    background: url("../contact.jpg") no-repeat center center/cover;
+    height:91%;
+    width:100%;
+    opacity:0.5;
+    z-index: -1;
+}
+#contact-box input,#contact-box textarea{
+    width:100%;
+    padding:0.7rem;
+    border-radius: 20px;
+    border:3px solid black;
+    font-size: 1.8rem;
+}
+#contact-box{
+    display:flex;
+    justify-content: center ;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width:30%;
+}
+#contact-box label{
+    font-size: 2rem;
+    font-family: cursive;
+}
+footer{
+    padding:10px 20px;
+    color:white;
+    background-color: black;
+}
